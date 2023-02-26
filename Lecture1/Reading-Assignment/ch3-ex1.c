@@ -1,16 +1,17 @@
 #include <stdio.h>
+int main(void){
 
-int main (void)
-{
-    // declares variables i and x as int and float
-    int i;
-    float x;
+    // declare the variables i and j as type int, and x and y as type float
+    int i, j;
+    float x, y;
 
-    // assigns values to the variables
-    i = 40;
-    x = 839.21f;
+    // assign values to the variables
+    i = 10;
+    j = 20;
+    x = 43.2892f;
+    y = 5527.0f;
 
-    // prints with the different formats of i and x
-    printf("|%d|%5d|%-5d|%5.3d|\n", i, i, i, i);
-    printf("|%10.3f|%10.3e|%-10g|\n", x, x, x);
+    // printing of the variables' values in the formatted specifier in the string
+    printf (" i = %d, j = %d, x = %f, y = %f\n", i, j, x, y);
+
 }

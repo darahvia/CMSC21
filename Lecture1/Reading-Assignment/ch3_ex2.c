@@ -1,22 +1,16 @@
 #include <stdio.h>
 
-int main(void)
+int main (void)
 {
-    // declare variables for the numerator and denominator, and also for the sum
-    int num1, denom1, num2, denom2, result_num, result_denom;
+    // declares variables i and x as int and float
+    int i;
+    float x;
 
-    // lines with the scan f function asks the user to input and 
-    // then it is stored to their respective variables
-    printf ("Enter first fraction: ");
-    scanf("%d/%d", &num1, &denom1);
+    // assigns values to the variables
+    i = 40;
+    x = 839.21f;
 
-    printf ("Enter second fraction: ");
-    scanf("%d/%d", &num2, &denom2);
-
-    // calculate the numerator and denominator of the sum of the two fractions
-    result_num = num1 * denom2 + num2 * denom1;
-    result_denom = denom1 * denom2;
-
-    // printing of the result
-    printf("The sum is %d/%d\n", result_num, result_denom);
+    // prints with the different formats of i and x
+    printf("|%d|%5d|%-5d|%5.3d|\n", i, i, i, i);
+    printf("|%10.3f|%10.3e|%-10g|\n", x, x, x);
 }
