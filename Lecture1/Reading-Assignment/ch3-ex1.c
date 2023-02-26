@@ -13,5 +13,5 @@ int main(void){
 
     // printing of the variables' values in the formatted specifier in the string
     printf (" i = %d, j = %d, x = %f, y = %f\n", i, j, x, y);
-
+ 
 }

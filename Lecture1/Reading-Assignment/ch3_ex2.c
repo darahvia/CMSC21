@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (void)
+int main (void) 
 {
     // declares variables i and x as int and float
     int i;

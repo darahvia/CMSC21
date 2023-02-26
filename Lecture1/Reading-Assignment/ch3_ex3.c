@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    // declare variables for the numerator and denominator, and for the sum
+    // declare variables for the numerator and denominator, and for the sum 
     int num1, denom1, num2, denom2, result_num, result_denom;
 
     // lines with the scan f function asks the user to input and 
