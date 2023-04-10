@@ -42,7 +42,7 @@ int main(void){
 
     for (current_point = 0; current_point< ROW; current_point++){
         if (location_input == CHARGING_STATION_INDEX_C){        // if the location input is the charging station C
-            printf("C is a charging station."); break;
+            printf("C is a charging station"); break;
         }
         else if (location_input == CHARGING_STATION_INDEX_D){       // if the location input is the charging station D
             printf("D is a charging station"); break;
