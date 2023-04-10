@@ -2,21 +2,21 @@
 
 int main(void){
     int i;
-    i = 1;
+    i = 10;
     while (i < 10) {
         printf("%d ", i);
         i++;
     }
     printf("\n");
 
-    i = 1;
+    i = 10;
     for(;i < 10;){
         printf("%d ", i);
         i++;
     }
     printf("\n");
 
-    i = 1;
+    i = 10;
     do {
         printf("%d ", i);
         i++;
