@@ -7,21 +7,38 @@
 
 int main(void){
     int location_input, current_point;
-    char labels[ROW] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'}; //  for columns and labels
-
-    printf("Which point are you located? 0 - A, 1- B, 2 - C, 3 - D, 4 - E, 5 - F, 6 - G, 7 - H\n");
-    scanf("%d", &location_input);       // read user input for location
+    char labels[ROW] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'}; //  for columns and labels
     
-    // display the adjancy matrix
-    int road_networks[ROW][COLUMN] =  {{1, 1, 0, 0 ,0 ,1, 1 ,0, 0}, 
+    int road_networks[ROW][COLUMN] =  {{1, 1, 0, 0, 0, 1, 0, 0, 0}, 
                                         {1, 1, 1, 0, 0, 0, 0, 0, 0}, 
-                                        {0, 1, 1, 0, 1, 1, 0, 0, 0},
+                                        {0, 1, 1, 0, 1, 1, 0, 0, 1},
                                         {0, 0, 0, 1, 1, 0, 0, 0, 0},
                                         {0, 0, 0, 1, 1, 0, 0, 0, 0},
                                         {1, 0, 1, 0, 0, 1, 0, 0, 0},
                                         {1, 0, 0, 1, 0, 0, 1, 0, 0},
-                                        {0, 0, 0, 0, 0, 1, 0, 1, 1},
-                                        {0, 0, 0, 0, 0, 0, 0, 1, 0}};
+                                        {0, 0, 0, 0, 0, 0, 0, 1, 1},
+                                        {0, 0, 0, 0, 0, 0, 0, 1, 1}};
+
+    // print the adjacency matrix
+    int row, column;
+    printf("       A    B   [C]  [D]   E    F    G    H    I\n");
+    for (row = 0; row < ROW; row++){
+
+        if (row == 2 || row == 3){
+            printf("[%c]", labels[row]);     // display the labels
+        }else{
+            printf("%c  ", labels[row]);
+            }
+
+        for (column = 0; column < COLUMN; column++){
+            printf("%5d", road_networks[row][column]);      // print the individual array values
+        }printf("\n");
+    }
+
+    
+    printf("Which point are you located? 0 - A, 1- B, 2 - C, 3 - D, 4 - E, 5 - F, 6 - G, 7 - H\n");
+    scanf("%d", &location_input);       // read user input for location
+
 
     for (current_point = 0; current_point< ROW; current_point++){
         if (location_input == CHARGING_STATION_INDEX_C){        // if the location input is the charging station C
