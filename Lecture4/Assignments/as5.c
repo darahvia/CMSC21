@@ -4,10 +4,13 @@
 
 int main(void){
     int numDays, startDay, days, count;
-    printf("Enter number of days in month: ");
-    scanf("%d", &numDays);
-    printf("Enter the starting day of the week (1 = Sun, 7 = Sat):");
-    scanf("%d", &startDay);
+    do{    
+        printf("Enter number of days in month: ");
+        scanf("%d", &numDays);
+        printf("Enter the starting day of the week (1 = Sun, 7 = Sat):");
+        scanf("%d", &startDay);   
+    }while(numDays < 28 || numDays > 31 || startDay < 1 || startDay > 7);
+  
     for (count = 1; count < startDay; count++){
         printf("   ");              // print spaces before beginning of day
     }
@@ -21,4 +24,5 @@ int main(void){
         }
     }
 }
+
 

@@ -9,3 +9,4 @@ int main(void){
         }
     printf("%d = %lld", n, power2);
 }
+
