@@ -8,8 +8,7 @@ bool is_anagram(int *occurences1, int *occurences2);
 
 int main(void){
 
-    int i,
-        occurences1[SIZE] = {0},
+    int occurences1[SIZE] = {0},
         occurences2[SIZE] = {0};
 
     printf("Enter first word: ");
