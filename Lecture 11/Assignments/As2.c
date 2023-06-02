@@ -4,7 +4,7 @@
 #define SIZE 26
 
 void scan_word(int *occurences);
-bool is_anagram(int *occurences1, int *occurences2);
+bool is_anagram(int *occurences1, int *occurences2);    // used dereference operator in accessing the elements of the array
 
 int main(void){
 
@@ -35,7 +35,7 @@ void scan_word(int *occurences){
 bool is_anagram (int *occurences1, int *occurences2){
     int i;
     for (i = 0; i < SIZE; i++) {
-        if (*occurences1++ != *occurences2++) {
+        if (*occurences1++ != *occurences2++) {     // used dereference operator instead of subscript operator
             return false;
         }
     }
