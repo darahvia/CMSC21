@@ -9,7 +9,6 @@ bool is_anagram(int occurences1[SIZE], int occurences2[SIZE]);
 int main(void){
 
     int i,
-        same = 1,
         occurences1[SIZE] = {0},
         occurences2[SIZE] = {0};
 
@@ -43,3 +42,4 @@ bool is_anagram (int occurences1[SIZE], int occurences2[SIZE]){
     }
     return true;
 }
+

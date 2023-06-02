@@ -35,8 +35,8 @@ void scan_word(int *occurences){
 
 bool is_anagram (int *occurences1, int *occurences2){
     int i, j;
-    for (i = 0; i < 26; i++) {
-        if (occurences1[i] != occurences2[i]) {
+    for (i = 0; i < SIZE; i++) {
+        if (*occurences1++ != *occurences2++) {
             return false;
         }
     }
