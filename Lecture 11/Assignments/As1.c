@@ -34,7 +34,7 @@ void scan_word(int occurences[SIZE]){
 }
 
 bool is_anagram (int occurences1[SIZE], int occurences2[SIZE]){
-    int i, j;
+    int i;
     for (i = 0; i < SIZE; i++) {
         if (occurences1[i] != occurences2[i]) {     //check if there is at least one instance where the occurence of a letter is not the same
             return false;
